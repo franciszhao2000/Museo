@@ -12,6 +12,8 @@ import com.raven.form.Form_Home;
 import java.awt.Color;
 import javax.swing.JComponent;
 import com.raven.swing.ScrollBar;
+import com.raven.swing.icon.GoogleMaterialDesignIcons;
+import com.raven.swing.icon.IconFontSwing;
 
 /**
  *
@@ -48,6 +50,7 @@ public class Main extends javax.swing.JFrame {
                 }
             }
         });
+        IconFontSwing.register(GoogleMaterialDesignIcons.getIconFont());
         // set when system open start with home form
         setForm(new Form_Home());
         
